@@ -1,0 +1,10 @@
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+const SKILL_DIR='C:/Users/harpr/.codex/plugins/cache/openai-primary-runtime/presentations/26.1116.12020/skills/presentations';
+const workspaceDir=process.cwd();
+const candidatePath=path.join(workspaceDir,'outputs/college_placement_insights.pptx');
+const finalPath=path.join(workspaceDir,'outputs/college_placement_insights_deck.pptx');
+const { finalizePresentation }=await import(pathToFileURL(path.join(SKILL_DIR,'container_tools/artifact_tool_utils.mjs')).href);
+const stagingDir=path.join(workspaceDir,'work/finalize');
+const fs=await import('node:fs/promises'); await fs.mkdir(stagingDir,{recursive:true});
+const result=await finalizePresentation({explicitTotalSlideCount:7,requiredNativeTableOwnerSlides:[],requiredNativeChartOwnerSlides:[],workspaceDir,candidatePath,finalPath,pythonExecutable:'C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1116-1220-0_26.1116.1220.0_x64__3k8sg7r9htsxt/dependencies/python/python.exe',integrityValidatorPath:path.join(SKILL_DIR,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL_DIR,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit'],fontPolicy:{basis:'design',families:['Arial']},verifyArtifactToolImport:true,receiptPath:path.join(stagingDir,'validation.json')}); console.log(JSON.stringify(result));

@@ -1,0 +1,41 @@
+﻿response_id,year,branch,cgpa_band,skill_confidence_1_5,preparation_1_5,internship,placement_confidence_1_5,expected_salary_band,top_support_priority
+1,Final year,Civil,6.0–6.9,3,3,No,3,Not sure,Role matching skills
+2,2nd year,Computer/IT,7.0–7.9,2,4,No,3,₹8–12 LPA,Internships
+3,2nd year,Other,6.0–6.9,1,2,Yes,2,Not sure,Aptitude/interview training
+4,Final year,Electronics,Below 6.0,3,5,Yes,4,₹3–5 LPA,Aptitude/interview training
+5,3rd year,Other,Below 6.0,2,4,No,3,Not sure,More companies
+6,Final year,Mechanical,Below 6.0,1,4,No,3,₹5–8 LPA,More companies
+7,Final year,Electronics,Below 6.0,2,5,No,3,₹8–12 LPA,Higher salary
+8,Final year,Other,7.0–7.9,5,5,Yes,5,₹8–12 LPA,Role matching skills
+9,2nd year,Mechanical,7.0–7.9,1,5,No,2,₹8–12 LPA,More companies
+10,3rd year,Mechanical,7.0–7.9,4,1,Yes,2,₹12+ LPA,More companies
+11,Final year,Other,8.0+,5,2,No,4,Not sure,Internships
+12,2nd year,Electronics,6.0–6.9,3,2,Yes,2,Not sure,Role matching skills
+13,3rd year,Mechanical,Below 6.0,1,2,No,2,₹8–12 LPA,Role matching skills
+14,Final year,Civil,6.0–6.9,4,1,Yes,2,₹8–12 LPA,Aptitude/interview training
+15,2nd year,Mechanical,8.0+,1,4,No,2,₹12+ LPA,Aptitude/interview training
+16,Final year,Civil,6.0–6.9,1,4,Yes,2,₹5–8 LPA,Role matching skills
+17,Final year,Computer/IT,Below 6.0,5,5,No,5,₹8–12 LPA,Aptitude/interview training
+18,2nd year,Other,7.0–7.9,2,5,No,3,₹5–8 LPA,Role matching skills
+19,3rd year,Mechanical,Below 6.0,4,5,Yes,5,₹5–8 LPA,Aptitude/interview training
+20,Final year,Other,8.0+,2,4,No,3,₹5–8 LPA,Aptitude/interview training
+21,Final year,Civil,7.0–7.9,4,1,No,2,₹3–5 LPA,Internships
+22,3rd year,Mechanical,Below 6.0,2,1,No,2,₹3–5 LPA,More companies
+23,2nd year,Civil,Below 6.0,3,5,Yes,4,₹3–5 LPA,Internships
+24,Final year,Electronics,8.0+,1,4,Yes,3,Not sure,More companies
+25,2nd year,Other,7.0–7.9,3,3,No,4,Not sure,Internships
+26,3rd year,Computer/IT,Below 6.0,5,3,Yes,4,₹8–12 LPA,Role matching skills
+27,3rd year,Computer/IT,8.0+,3,2,Yes,3,₹12+ LPA,More companies
+28,3rd year,Electronics,6.0–6.9,1,4,No,2,₹5–8 LPA,Higher salary
+29,Final year,Other,8.0+,2,3,Yes,2,₹12+ LPA,Aptitude/interview training
+30,Final year,Electronics,7.0–7.9,5,2,Yes,3,₹8–12 LPA,Internships
+31,2nd year,Other,6.0–6.9,2,2,Yes,2,₹8–12 LPA,Aptitude/interview training
+32,3rd year,Other,8.0+,2,3,Yes,2,₹5–8 LPA,Role matching skills
+33,2nd year,Computer/IT,8.0+,3,4,Yes,3,Not sure,Internships
+34,2nd year,Electronics,7.0–7.9,1,3,Yes,2,₹12+ LPA,Role matching skills
+35,2nd year,Electronics,7.0–7.9,3,3,No,4,Not sure,Higher salary
+36,3rd year,Computer/IT,6.0–6.9,3,2,Yes,3,₹8–12 LPA,Internships
+37,3rd year,Mechanical,6.0–6.9,1,3,No,2,₹3–5 LPA,More companies
+38,Final year,Other,8.0+,1,3,No,2,₹8–12 LPA,Role matching skills
+39,3rd year,Electronics,6.0–6.9,4,2,Yes,3,₹5–8 LPA,Higher salary
+40,Final year,Civil,7.0–7.9,1,4,Yes,3,₹5–8 LPA,Aptitude/interview training

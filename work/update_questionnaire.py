@@ -1,0 +1,4 @@
+from pathlib import Path
+p=Path('outputs/google_form_questionnaire.md'); s=p.read_text(encoding='utf-8-sig')
+s=s.replace('Use Q4, Q5, Q7 as 1–5 numeric values. Compare preparation score with confidence using a cross-tab; report salary expectations and support priorities as response counts/percentages. Treat branch/year comparisons cautiously when groups are small. Do not collect personally identifying information.','Use Q4, Q5, Q7 as 1–5 numeric values. The R Shiny app groups ratings (1–2 low, 3 medium, 4–5 high), finds recurring answer pairs with association rules, and estimates high self-reported placement confidence (Q7 = 4 or 5) using preparation, technical-skill confidence, and internship experience. It also summarizes salary expectations and support priorities. The form does not ask about actual job offers, so the app cannot predict actual placement or prove causes. Do not collect personally identifying information.')
+p.write_text(s,encoding='utf-8')

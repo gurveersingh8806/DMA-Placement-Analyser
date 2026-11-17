@@ -1,0 +1,6 @@
+from pathlib import Path
+p=Path('outputs/placement_analysis.py')
+s=p.read_text(encoding='utf-8-sig')
+s=s.replace("REQUIRED = ['year','branch','cgpa_band','skill_confidence_1_5','preparation_1_5','internship','placement_confidence_1_5','expected_salary_band','top_support_priority']", "REQUIRED = ['year','branch','cgpa_band','skill_confidence_1_5','preparation_1_5','internship','placement_confidence_1_5','expected_salary_band','top_support_priority']\nHEADER_HINTS = {\n    'year':'current year of study', 'branch':'broad branch', 'cgpa_band':'cgpa range',\n    'skill_confidence_1_5':'technical skills', 'preparation_1_5':'regularly are you preparing',\n    'internship':'internship or substantial industry project',\n    'placement_confidence_1_5':'confident that you can secure a suitable placement',\n    'expected_salary_band':'salary range', 'top_support_priority':'support would help you most'\n}\n\ndef normalize_headers(df):\n    renames = {}\n    for target, hint in HEADER_HINTS.items():\n        if target in df.columns: continue\n        match = next((col for col in df.columns if hint in str(col).casefold()), None)\n        if match is not None: renames[match] = target\n    return df.rename(columns=renames)")
+s=s.replace("df=pd.read_csv(source)\n    missing", "df=normalize_headers(pd.read_csv(source))\n    missing")
+p.write_text(s,encoding='utf-8')
